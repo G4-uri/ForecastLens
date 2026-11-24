@@ -1,4 +1,4 @@
-# Agentic RAG Lab
+# ForecastLens - Agentic RAG Lab
 
 A small, fully tested **hybrid-retrieval RAG service with a tool-using agent**, served over a FastAPI REST API, with an evaluation harness that reports results the way a forecaster would: against baselines, with sample sizes and confidence intervals.
 
