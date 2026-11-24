@@ -1,0 +1,326 @@
+{
+  "retrieval": [
+    {
+      "question": "Why can't I shuffle my data for cross-validation when predicting stock prices?",
+      "relevant": [
+        "forecast_validation"
+      ]
+    },
+    {
+      "question": "What does it mean for a series to have a stable mean and variance over time?",
+      "relevant": [
+        "time_series_basics"
+      ]
+    },
+    {
+      "question": "How do I remove a long-run upward drift from a sequence of observations?",
+      "relevant": [
+        "time_series_basics"
+      ]
+    },
+    {
+      "question": "What is the simplest benchmark a prediction model must beat?",
+      "relevant": [
+        "forecast_validation"
+      ]
+    },
+    {
+      "question": "My forecast improvement looks too good to be true, what should I check?",
+      "relevant": [
+        "forecast_validation"
+      ]
+    },
+    {
+      "question": "How often should realised losses exceed the risk limit if the model is calibrated?",
+      "relevant": [
+        "value_at_risk"
+      ]
+    },
+    {
+      "question": "Why is assuming a bell-curve a problem for tail loss estimates?",
+      "relevant": [
+        "value_at_risk"
+      ]
+    },
+    {
+      "question": "What does Kupiec's test check?",
+      "relevant": [
+        "value_at_risk"
+      ]
+    },
+    {
+      "question": "How do I stop a language model from making things up by giving it outside documents?",
+      "relevant": [
+        "rag_overview"
+      ]
+    },
+    {
+      "question": "How big should the pieces of a document be before indexing?",
+      "relevant": [
+        "rag_overview"
+      ]
+    },
+    {
+      "question": "Why return the source with every retrieved passage?",
+      "relevant": [
+        "rag_overview"
+      ]
+    },
+    {
+      "question": "How is closeness between two text vectors measured?",
+      "relevant": [
+        "vector_search"
+      ]
+    },
+    {
+      "question": "Which databases can store embeddings and filter on metadata?",
+      "relevant": [
+        "vector_search",
+        "sql_basics"
+      ]
+    },
+    {
+      "question": "How do I make nearest-neighbour search fast for millions of vectors?",
+      "relevant": [
+        "vector_search"
+      ]
+    },
+    {
+      "question": "Why does exact keyword search miss paraphrased questions?",
+      "relevant": [
+        "hybrid_retrieval"
+      ]
+    },
+    {
+      "question": "How do I merge two ranked result lists without calibrating scores?",
+      "relevant": [
+        "hybrid_retrieval"
+      ]
+    },
+    {
+      "question": "What is the formula behind reciprocal rank fusion and its usual constant?",
+      "relevant": [
+        "hybrid_retrieval"
+      ]
+    },
+    {
+      "question": "What stops a model-driven loop from running forever?",
+      "relevant": [
+        "ai_agents"
+      ]
+    },
+    {
+      "question": "How does the model know which functions it is allowed to call?",
+      "relevant": [
+        "ai_agents"
+      ]
+    },
+    {
+      "question": "What is the ReAct pattern?",
+      "relevant": [
+        "ai_agents"
+      ]
+    },
+    {
+      "question": "Which HTTP status code should an invalid request body return?",
+      "relevant": [
+        "rest_api_design"
+      ]
+    },
+    {
+      "question": "What advantages does FastAPI have over Flask for request validation?",
+      "relevant": [
+        "rest_api_design"
+      ]
+    },
+    {
+      "question": "Why should a service expose a health endpoint?",
+      "relevant": [
+        "rest_api_design"
+      ]
+    },
+    {
+      "question": "What is the difference between filtering rows before and after grouping?",
+      "relevant": [
+        "sql_basics"
+      ]
+    },
+    {
+      "question": "How do I keep an LLM-generated query from damaging my database?",
+      "relevant": [
+        "sql_basics"
+      ]
+    },
+    {
+      "question": "When should I use a left join instead of an inner join?",
+      "relevant": [
+        "sql_basics"
+      ]
+    },
+    {
+      "question": "How can I test an agent without paying for model calls?",
+      "relevant": [
+        "testing_ai_systems"
+      ]
+    },
+    {
+      "question": "How do I notice that a code change made retrieval worse?",
+      "relevant": [
+        "testing_ai_systems"
+      ]
+    },
+    {
+      "question": "What belongs in a QA bug report?",
+      "relevant": [
+        "testing_ai_systems"
+      ]
+    },
+    {
+      "question": "Why copy the requirements file before the source code in a Dockerfile?",
+      "relevant": [
+        "docker_deployment"
+      ]
+    },
+    {
+      "question": "Where should API keys live when running in a container?",
+      "relevant": [
+        "docker_deployment"
+      ]
+    },
+    {
+      "question": "What is a sprint retrospective?",
+      "relevant": [
+        "git_workflow"
+      ]
+    },
+    {
+      "question": "What should run automatically on every pull request?",
+      "relevant": [
+        "git_workflow"
+      ]
+    }
+  ],
+  "agent": [
+    {
+      "question": "What is the total revenue in the North region?",
+      "expected_tools": [
+        "sql_query"
+      ],
+      "answer_contains": [
+        "702950"
+      ]
+    },
+    {
+      "question": "Which region had the highest revenue?",
+      "expected_tools": [
+        "sql_query"
+      ],
+      "answer_contains": [
+        "West",
+        "801950"
+      ]
+    },
+    {
+      "question": "How many units of Phone were sold in total?",
+      "expected_tools": [
+        "sql_query"
+      ],
+      "answer_contains": [
+        "1900"
+      ]
+    },
+    {
+      "question": "What is the average units for the East region?",
+      "expected_tools": [
+        "sql_query"
+      ],
+      "answer_contains": [
+        "28.94"
+      ]
+    },
+    {
+      "question": "Which product had the lowest revenue?",
+      "expected_tools": [
+        "sql_query"
+      ],
+      "answer_contains": [
+        "Tablet",
+        "516600"
+      ]
+    },
+    {
+      "question": "Total revenue in December?",
+      "expected_tools": [
+        "sql_query"
+      ],
+      "answer_contains": [
+        "227150"
+      ]
+    },
+    {
+      "question": "What is the total revenue for Laptop in the West region?",
+      "expected_tools": [
+        "sql_query"
+      ],
+      "answer_contains": [
+        "297000"
+      ]
+    },
+    {
+      "question": "What is the total revenue in the North region, and what is 15% of that?",
+      "expected_tools": [
+        "sql_query",
+        "calculator"
+      ],
+      "answer_contains": [
+        "702950",
+        "105442.5"
+      ]
+    },
+    {
+      "question": "Calculate (12 + 8) * 3",
+      "expected_tools": [
+        "calculator"
+      ],
+      "answer_contains": [
+        "60"
+      ]
+    },
+    {
+      "question": "What is 20% of 350?",
+      "expected_tools": [
+        "calculator"
+      ],
+      "answer_contains": [
+        "70"
+      ]
+    },
+    {
+      "question": "What is walk-forward validation?",
+      "expected_tools": [
+        "search_docs"
+      ],
+      "answer_contains": [
+        "[forecast_validation#"
+      ]
+    },
+    {
+      "question": "Explain reciprocal rank fusion.",
+      "expected_tools": [
+        "search_docs"
+      ],
+      "answer_contains": [
+        "[hybrid_retrieval#"
+      ]
+    },
+    {
+      "question": "How do I prevent SQL injection?",
+      "expected_tools": [
+        "search_docs"
+      ],
+      "answer_contains": [
+        "[sql_basics#"
+      ]
+    }
+  ]
+}
